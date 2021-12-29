@@ -1,0 +1,5 @@
+<form method="post" action="{{ path('crew_delete', {'id': crew.id}) }}"
+      onsubmit="return confirm('Êtes-vous sûr de bien vouloir supprimer ce membre?');">
+    <input type="hidden" name="_token" value="{{ csrf_token('Supprimer' ~ crew.id) }}">
+    <button class="btn btn-danger btn"><img src="https://img.icons8.com/fluency-systems-filled/30/000000/snorkeling.png" alt="Supprimer"/></button>
+</form>
