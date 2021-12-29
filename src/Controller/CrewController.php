@@ -29,6 +29,7 @@ class CrewController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($crew);
             $entityManager->flush();
+            $this->addFlash('success', 'Le membre à bien été ajoutée');
 
             return $this->redirectToRoute('crew_new', [], Response::HTTP_SEE_OTHER);
         }
