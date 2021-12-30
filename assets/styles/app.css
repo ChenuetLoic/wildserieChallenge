@@ -12,6 +12,7 @@ body {
 main {
     max-width: 960px;
     margin: 0 auto;
+    position: relative;
 }
 
 header {
@@ -47,6 +48,8 @@ label {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
     margin-top: 2em;
     text-align: center;
     color: #fff;

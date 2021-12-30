@@ -11,18 +11,22 @@
     {% endblock %}
 </head>
 <header>
-{% block header %}{% endblock %}
+    {% block header %}{% endblock %}
 </header>
 <body>
-{% for message in app.flashes('success') %}
-    <div class="alert alert-success">
-        {{ message }}
-    </div>
-{% endfor %}
-{% block body %}{% endblock %}
-
-{% block javascripts %}
-    {{ encore_entry_script_tags('app') }}
-{% endblock %}
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
+<main>
+    {% block main %}{% endblock %}
+</main>
+<footer>
+    {% block footer %}{% endblock %}
+</footer>
 </body>
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
 </html>
