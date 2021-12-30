@@ -4,26 +4,26 @@
         {{ encore_entry_link_tags('home') }}
     {% endblock %}
 {% block header %}
-    <h1>
+    <h1 class="m-3">
         <img src="https://www.wildcodeschool.com/assets/logo_main-e4f3f744c8e717f1b7df3858dce55a86c63d4766d5d9a7f454250145f097c2fe.png"
              alt="Wild Code School logo"/>
         Les Argonautes
     </h1>
 {% endblock %}
 {% block main %}
-    <h2 class="m-2">Ajouter un(e) Argonaute</h2>
+    <h2 class="m-3">Ajouter un(e) Argonaute</h2>
     {{ include('crew/_form.html.twig') }}
-    <h2>Membres de l'équipage</h2>
+    <h2 class="m-3">Membres de l'équipage</h2>
     <div class="gridName">
         {% for crew in crews %}
-            <div class="text-center p-2">
+            <div class="text-center m-3">
                 <p>{{ crew.Name }} {{ crew.surname }}.</p>
             </div>
         {% endfor %}
     </div>
 {% endblock %}
 {% block footer %}
-    <div class="container-fluid">
+    <div>
         <p class="pt-3">Réalisé par Jason et Loïc en Anthestérion de l'an 515 avant JC et un petit peu aujourd'hui.</p>
     </div>
 {% endblock %}

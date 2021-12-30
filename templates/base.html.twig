@@ -10,10 +10,11 @@
         {{ encore_entry_link_tags('home') }}
     {% endblock %}
 </head>
+<body>
 <header>
     {% block header %}{% endblock %}
 </header>
-<body>
+
     {% for message in app.flashes('success') %}
         <div class="alert alert-success">
             {{ message }}
@@ -22,10 +23,10 @@
 <main>
     {% block main %}{% endblock %}
 </main>
-<footer>
+
+</body><footer>
     {% block footer %}{% endblock %}
 </footer>
-</body>
     {% block javascripts %}
         {{ encore_entry_script_tags('app') }}
     {% endblock %}

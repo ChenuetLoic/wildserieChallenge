@@ -7,12 +7,14 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 main {
     max-width: 960px;
     margin: 0 auto;
-    position: relative;
+    padding-bottom: 60px;
+
 }
 
 header {
@@ -38,23 +40,16 @@ label {
     margin-bottom: 0.5em;
 }
 
-.new-member-form {
-    margin: 2em 0 4em 0;
-    text-align: center;
-}
-
-.member-item {
-    padding: 0.25em 0;
-}
-
 footer {
+    left: 0;
+    right: 0;
     position: absolute;
     bottom: 0;
     margin-top: 2em;
     text-align: center;
     color: #fff;
     background: #f76c6c;
-    padding: 0.25em 0;
+
 }
 
 form label {
@@ -71,6 +66,6 @@ form label {
 
 .gridName {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr) !important;
+    text-align: center;
 }

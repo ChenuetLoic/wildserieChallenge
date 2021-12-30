@@ -1,0 +1,7 @@
+installation:
+composer install
+composer require symfony/webpack-encore-bundle
+yarn install
+
+Site sur mon serveur.
+https://www.loicchenuetcv.fr/
