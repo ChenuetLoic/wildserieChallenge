@@ -17,7 +17,7 @@ class CrewType extends AbstractType
                 'label' => 'Nom'
             ])
             ->add('surname', TextType::class, [
-                'label' => 'Prénom'
+                'label' => 'Adjectifs qualificatifs'
     ])
         ;
     }

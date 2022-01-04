@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="{{ asset('/images/favicon.png') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('build/images/favicon.a3c71d5e.png') }}" />
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css"/>
     <title>{% block title %}Welcome!{% endblock %}</title>
     {% block stylesheets %}
@@ -14,7 +14,6 @@
 <header>
     {% block header %}{% endblock %}
 </header>
-
     {% for message in app.flashes('success') %}
         <div class="alert alert-success">
             {{ message }}
@@ -23,8 +22,8 @@
 <main>
     {% block main %}{% endblock %}
 </main>
-
-</body><footer>
+</body>
+<footer>
     {% block footer %}{% endblock %}
 </footer>
     {% block javascripts %}

@@ -4,7 +4,7 @@
         {{ encore_entry_link_tags('home') }}
     {% endblock %}
 {% block header %}
-    <h1 class="m-3">
+    <h1 class="m-3 text-dark">
         <img src="https://www.wildcodeschool.com/assets/logo_main-e4f3f744c8e717f1b7df3858dce55a86c63d4766d5d9a7f454250145f097c2fe.png"
              alt="Wild Code School logo"/>
         Les Argonautes
@@ -13,13 +13,15 @@
 {% block main %}
     <h2 class="m-3">Ajouter un(e) Argonaute</h2>
     {{ include('crew/_form.html.twig') }}
-    <h2 class="m-3">Membres de l'équipage</h2>
-    <div class="gridName">
-        {% for crew in crews %}
-            <div class="text-center m-3">
-                <p>{{ crew.Name }} {{ crew.surname }}.</p>
-            </div>
-        {% endfor %}
+    <div class="backgroundOpacity">
+        <h2 class="m-3">Membres de l'équipage</h2>
+        <div class="gridName">
+            {% for crew in crews %}
+                <div class="text-center m-3">
+                    <p>{{ crew.Name }} {{ crew.surname }}.</p>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
 {% block footer %}
